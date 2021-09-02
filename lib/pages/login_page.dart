@@ -64,13 +64,13 @@ class _LoginPageState extends State<LoginPage> {
                         hintText: 'Enter username',
                         labelText: 'Username',
                       ),
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return "Username can not ne empty!";
-                        } else {
-                          return null;
-                        }
-                      },
+                      // validator: (value) {
+                      //   if (value!.isEmpty) {
+                      //     return "Username can not ne empty!";
+                      //   } else {
+                      //     return null;
+                      //   }
+                      // },
                       onChanged: (value) {
                         name = value;
                         setState(() {});
@@ -85,15 +85,15 @@ class _LoginPageState extends State<LoginPage> {
                         hintText: 'Enter password',
                         labelText: 'Password',
                       ),
-                      validator: (value) {
-                        if (value!.isEmpty) {
-                          return "Password can not ne empty!";
-                        } else if (value.length < 6) {
-                          return "Password length should be more than 6";
-                        } else {
-                          return null;
-                        }
-                      },
+                      // validator: (value) {
+                      //   if (value!.isEmpty) {
+                      //     return "Password can not ne empty!";
+                      //   } else if (value.length < 6) {
+                      //     return "Password length should be more than 6";
+                      //   } else {
+                      //     return null;
+                      //   }
+                      // },
                     ),
                   ],
                 ),
